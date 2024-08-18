@@ -1,0 +1,123 @@
+.back_button {
+    padding: .25rem .5rem;
+    margin: .50rem 0;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
+
+.content {
+    width: 100vw;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box{
+    margin: 1 rem auto;
+}
+
+.pokemon, .details {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+.content .pokemon .name {
+    padding: 0;
+    margin: .625rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.content .pokemon .types {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: .625rem;
+    gap: 1rem;
+    list-style: none;
+    color: #fff;
+    justify-content: center;
+}
+
+.content .pokemon .types .type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;    
+}
+
+.content .pokemon .img {
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.content .details {
+    background-color: #dddfe1;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content .details .menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.content .details .menu_option {
+    color: #fff;
+    margin: 0 .5rem;
+    cursor: pointer;
+    background-color: #6c79db;
+    padding: .4rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content .details .menu_option:hover {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.content .details .menu_items {
+    display: none;
+}
+
+.content .details .menu_items.active {
+    display: block;
+}
+
+.content .details .menu_items ol {
+    list-style: none;
+    padding: 0;
+}
+
+#species, #abilities {
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 700px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .pokemon, .details {
+        flex-basis: 48%;
+        margin-bottom: 0;
+    }
+}
